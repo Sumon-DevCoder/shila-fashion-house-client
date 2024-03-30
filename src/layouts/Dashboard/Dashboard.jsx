@@ -1,10 +1,14 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { MdAdminPanelSettings } from "react-icons/md";
 import useCart from "../../hooks/useCart";
+import useAdmin from "../../hooks/useAdmin";
 
 const Dashboard = () => {
   const [carts] = useCart();
-  const isAdmin = true;
+
+  const [isAdmin] = useAdmin();
+
+  console.log(isAdmin);
   return (
     <div className="flex">
       <div className="w-64 bg-orange-400 min-h-screen">
