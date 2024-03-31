@@ -8,8 +8,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [carts] = useCart();
 
-  console.log("ccc", carts);
-
   const handleLogOut = () => {
     logOut().then(() => {
       // alert

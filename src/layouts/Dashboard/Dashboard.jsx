@@ -8,7 +8,6 @@ const Dashboard = () => {
 
   const [isAdmin] = useAdmin();
 
-  console.log(isAdmin);
   return (
     <div className="flex">
       <div className="w-64 bg-orange-400 min-h-screen">
@@ -47,7 +46,7 @@ const Dashboard = () => {
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li className="bg-green-400 p-2 rounded-md">
-            <NavLink to={"/"}>Shop</NavLink>
+            <NavLink to={"/shop"}>Shop</NavLink>
           </li>
         </ul>
       </div>
